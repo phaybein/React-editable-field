@@ -5,6 +5,7 @@ import EditIcon from '@mui/icons-material/Edit';
 
 function App() {
     const [ canEdit, setCanEdit ] = React.useState(false);
+    const [ loading, setLoading ] = React.useState(false);
 
     const editField = React.useCallback(() => {
         setCanEdit(true);
